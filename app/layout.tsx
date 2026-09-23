@@ -27,9 +27,11 @@ export const metadata: Metadata = {
     description: 'Estética, massoterapia, nutrição e bem-estar em um só espaço.',
     images: ['/bellez-real/1516F68B-F65B-4656-B648-96BC0542BE09.png'],
   },
+  alternates: { canonical: '/' },
   robots: {
     index: true,
     follow: true,
+    googleBot: { index: true, follow: true },
   },
 }
 
