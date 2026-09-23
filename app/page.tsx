@@ -145,7 +145,7 @@ export default function Home() {
 
         <div className="heroVisual">
           <img
-            src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1600&q=88"
+            src="/bellez/hero-facial.svg"
             alt="Ambiente de estética e cuidado"
           />
           <div className="floatingNote">
@@ -182,7 +182,7 @@ export default function Home() {
       <section id="experiencia" className="manifesto">
         <div className="manifestoImage">
           <img
-            src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=88"
+            src="/bellez/recepcao-sorriso.svg"
             alt="Momento de bem-estar"
           />
         </div>
