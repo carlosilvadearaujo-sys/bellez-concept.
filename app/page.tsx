@@ -181,7 +181,7 @@ export default function Home() {
             <div><span>Instagram</span><a href={instagramUrl} target="_blank" rel="noreferrer">@bellez.estetica</a></div>
             <div><span>Avaliações</span><a href={googleReviewUrl} target="_blank" rel="noreferrer">Avaliar a Bellez no Google</a></div>
             <div><span>Facilidades</span><p>Wi‑Fi · estacionamento gratuito · atendimento para adultos e crianças</p></div>
-            <div><span>Pagamento</span><p>PIX · dinheiro · cartões de crédito e débito · vale-presente</p></div>
+            <div><span>Pagamento</span><p>PIX · dinheiro · cartões de crédito e débito</p></div>
             <div><span>Idiomas</span><p>Português · Inglês</p></div>
           </div></div>
         </section>
