@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/bellez-real/1516F68B-F65B-4656-B648-96BC0542BE09.png',
+        url: '/bellez-real/1516F68B-F65B-4656-B648-96BC0542BE09.webp',
         width: 1200,
         height: 630,
         alt: 'Bellez Estética Integrativa',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bellez Estética Integrativa',
     description: 'Estética, massoterapia, nutrição e bem-estar em um só espaço.',
-    images: ['/bellez-real/1516F68B-F65B-4656-B648-96BC0542BE09.png'],
+    images: ['/bellez-real/1516F68B-F65B-4656-B648-96BC0542BE09.webp'],
   },
   alternates: { canonical: '/' },
   robots: {

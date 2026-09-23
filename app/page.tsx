@@ -6,8 +6,8 @@ const instagramUrl = 'https://www.instagram.com/bellez.estetica/'
 const googleReviewUrl = 'https://search.google.com/local/writereview?placeid=ChIJmUBsuiVhzpQRBtgChxAISXo'
 const whatsappUrl = 'https://wa.me/5511958342872?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Bellez%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.'
 const photos = {
-  welcome: '/bellez-real/1516F68B-F65B-4656-B648-96BC0542BE09.png',
-  reception: '/bellez-real/6A8E5C14-1C2A-4711-9553-AAD3D776B8C0.png',
+  welcome: '/bellez-real/1516F68B-F65B-4656-B648-96BC0542BE09.webp',
+  reception: '/bellez-real/6A8E5C14-1C2A-4711-9553-AAD3D776B8C0.webp',
 }
 
 const serviceGroups = [
@@ -88,12 +88,12 @@ const serviceGroups = [
 
 // Descriptions identify what is visible, without guessing a specific clinical procedure.
 const treatments = [
-  { title: 'Cuidados com a pele', category: 'Estética facial', image: '336B33DC-E2E1-48DB-87AF-E61D6291E797.png', alt: 'Aplicação de espuma de limpeza no rosto durante um cuidado facial', target: 'facial' },
-  { title: 'LED Skin', category: 'Estética facial', image: 'BC95B373-77D3-4197-93B1-773F048A0BCC.png', alt: 'Atendimento facial com equipamento de luz LED azul', target: 'facial' },
-  { title: 'Atendimento facial', category: 'Estética facial', image: 'FDA33DEB-3090-4456-9063-DEE0B0626BB4.png', alt: 'Profissional com equipamento facial e cliente usando óculos de proteção', target: 'facial' },
-  { title: 'Quick Massage', category: 'Massoterapia', image: 'BC01D8AE-B7EF-4CF6-A536-C088438961C8.png', alt: 'Massagem nos ombros em cadeira própria para quick massage', target: 'massoterapia' },
-  { title: 'Massoterapia', category: 'Cuidado corporal', image: '52B1221D-3258-411D-85A6-E643C7795A1B.png', alt: 'Profissional realizando atendimento manual em cliente deitado na maca', target: 'massoterapia' },
-  { title: 'Atendimento corporal', category: 'Estética corporal', image: '9F17E22D-4AB4-474D-819A-5A3398195A43.png', alt: 'Profissionais em atendimento na região das pernas de uma cliente', target: 'corporal' },
+  { title: 'Cuidados com a pele', category: 'Estética facial', image: '336B33DC-E2E1-48DB-87AF-E61D6291E797.webp', alt: 'Aplicação de espuma de limpeza no rosto durante um cuidado facial', target: 'facial' },
+  { title: 'LED Skin', category: 'Estética facial', image: 'BC95B373-77D3-4197-93B1-773F048A0BCC.webp', alt: 'Atendimento facial com equipamento de luz LED azul', target: 'facial' },
+  { title: 'Atendimento facial', category: 'Estética facial', image: 'FDA33DEB-3090-4456-9063-DEE0B0626BB4.webp', alt: 'Profissional com equipamento facial e cliente usando óculos de proteção', target: 'facial' },
+  { title: 'Quick Massage', category: 'Massoterapia', image: 'BC01D8AE-B7EF-4CF6-A536-C088438961C8.webp', alt: 'Massagem nos ombros em cadeira própria para quick massage', target: 'massoterapia' },
+  { title: 'Massoterapia', category: 'Cuidado corporal', image: '52B1221D-3258-411D-85A6-E643C7795A1B.webp', alt: 'Profissional realizando atendimento manual em cliente deitado na maca', target: 'massoterapia' },
+  { title: 'Atendimento corporal', category: 'Estética corporal', image: '9F17E22D-4AB4-474D-819A-5A3398195A43.webp', alt: 'Profissionais em atendimento na região das pernas de uma cliente', target: 'corporal' },
 ]
 
 export default function Home() {
