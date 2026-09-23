@@ -300,3 +300,48 @@ body{background:#fff}
   background:var(--green) !important;
   color:var(--cream);
 }
+
+
+/* Floating WhatsApp contact */
+.whatsappFloat{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:100;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  min-height:52px;
+  padding:0 18px;
+  border-radius:999px;
+  background:#25D366;
+  color:#fff;
+  font-family:var(--sans);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.02em;
+  box-shadow:0 12px 28px rgba(0,0,0,.18);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.whatsappFloat:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 34px rgba(0,0,0,.22);
+}
+.whatsappFloat svg{
+  width:24px;
+  height:24px;
+  flex:0 0 24px;
+}
+@media(max-width:560px){
+  .whatsappFloat{
+    right:14px;
+    bottom:14px;
+    width:54px;
+    height:54px;
+    min-height:54px;
+    padding:0;
+    justify-content:center;
+  }
+  .whatsappFloat span{display:none}
+  .whatsappFloat svg{width:27px;height:27px}
+}
