@@ -3,6 +3,7 @@ import Image from 'next/image'
 const bookingUrl = 'https://www.trinks.com/bellez-estetica'
 const instagramUrl = 'https://www.instagram.com/bellez.estetica/'
 const googleReviewUrl = 'https://search.google.com/local/writereview?placeid=ChIJmUBsuiVhzpQRBtgChxAISXo'
+const whatsappUrl = 'https://wa.me/5511958342872?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Bellez%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.'
 const photos = {
   welcome: '/bellez-real/1516F68B-F65B-4656-B648-96BC0542BE09.png',
   reception: '/bellez-real/6A8E5C14-1C2A-4711-9553-AAD3D776B8C0.png',
@@ -187,6 +188,19 @@ export default function Home() {
         <section className="finalCta shell"><div><p className="eyebrow">Seu momento Bellez</p><h2>Reserve um tempo para você.</h2></div><a className="btn primary" href={bookingUrl} target="_blank" rel="noreferrer">Agendar na Bellez</a></section>
       </main>
       <footer className="footer shell"><a className="brand" href="#top">BELLEZ<span>Estética Integrativa</span></a><p>Bellez Estética Integrativa · São Paulo</p><div className="footerLinks"><a href={instagramUrl} target="_blank" rel="noreferrer" className="textLink">Instagram</a><a href={googleReviewUrl} target="_blank" rel="noreferrer" className="textLink">Avaliar no Google</a><a href="#top" className="textLink">Voltar ao início</a></div></footer>
+    <a
+        className="whatsappFloat"
+        href={whatsappUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Falar com a Bellez pelo WhatsApp"
+      >
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path fill="currentColor" d="M19.1 17.2c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/>
+          <path fill="currentColor" d="M16 3.2A12.7 12.7 0 0 0 5.2 22.6L3.5 28.8l6.4-1.7A12.8 12.8 0 1 0 16 3.2Zm0 23.3c-2 0-3.9-.5-5.5-1.5l-.4-.2-3.8 1 1-3.7-.2-.4A10.6 10.6 0 1 1 16 26.5Z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
     </>
   )
 }
