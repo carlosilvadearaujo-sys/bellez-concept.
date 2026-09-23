@@ -157,7 +157,7 @@ export default function Home() {
         <section id="experiencia" className="experience">
           <div className="shell experienceGrid">
             <div className="experienceImage"><Image src={photos.reception} alt="Atendimento e conversa no balcão da recepção Bellez" fill sizes="(max-width: 760px) 100vw, 50vw" /></div>
-            <div className="experienceCopy"><p className="eyebrow">A experiência Bellez</p><h2>O cuidado começa no acolhimento.</h2><p>Da recepção ao atendimento, um momento dedicado a você. A Bellez reúne estética, massoterapia e nutrição, com cuidados voltados à pele, ao corpo, ao relaxamento e ao bem-estar.</p><a className="btn outlineLight" href="#contato">Conheça o espaço</a></div>
+            <div className="experienceCopy"><p className="eyebrow">Conheça a Bellez</p><h2>Estética, massoterapia e nutrição em um só espaço.</h2><p>A Bellez reúne profissionais especializados em cuidados faciais e corporais, harmonização facial, emagrecimento, cuidados com a pele e massagens voltadas ao alívio de dores, relaxamento e estresse.</p><a className="btn outlineLight" href="#contato">Conheça o espaço</a></div>
           </div>
         </section>
 
