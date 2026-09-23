@@ -186,7 +186,7 @@ export default function Home() {
         </section>
         <section className="finalCta shell"><div><p className="eyebrow">Seu momento Bellez</p><h2>Reserve um tempo para você.</h2></div><a className="btn primary" href={bookingUrl} target="_blank" rel="noreferrer">Agendar na Bellez</a></section>
       </main>
-      <footer className="footer shell"><a className="brand" href="#top">BELLEZ<span>Estética Integrativa</span></a><p>Conceito demonstrativo não oficial.<br/>Informações sujeitas à validação da clínica.</p><div className="footerLinks"><a href={instagramUrl} target="_blank" rel="noreferrer" className="textLink">Instagram</a><a href={googleReviewUrl} target="_blank" rel="noreferrer" className="textLink">Avaliar no Google</a><a href="#top" className="textLink">Voltar ao início</a></div></footer>
+      <footer className="footer shell"><a className="brand" href="#top">BELLEZ<span>Estética Integrativa</span></a><p>Bellez Estética Integrativa · São Paulo</p><div className="footerLinks"><a href={instagramUrl} target="_blank" rel="noreferrer" className="textLink">Instagram</a><a href={googleReviewUrl} target="_blank" rel="noreferrer" className="textLink">Avaliar no Google</a><a href="#top" className="textLink">Voltar ao início</a></div></footer>
     </>
   )
 }
