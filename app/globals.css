@@ -292,3 +292,11 @@ body{background:#fff}
 @media(max-width:760px){
   .heroMainImage{min-height:0;aspect-ratio:4/5;height:auto}
 }
+
+
+/* Footer CTA without background image */
+.finalCta{
+  min-height:auto;
+  background:var(--green) !important;
+  color:var(--cream);
+}
