@@ -145,7 +145,7 @@ export default function Home() {
 
         <div className="heroVisual">
           <img
-            src="/bellez/hero-facial.svg"
+            src="/1516F68B-F65B-4656-B648-96BC0542BE09.png"
             alt="Ambiente de estética e cuidado"
           />
           <div className="floatingNote">
@@ -182,7 +182,7 @@ export default function Home() {
       <section id="experiencia" className="manifesto">
         <div className="manifestoImage">
           <img
-            src="/bellez/recepcao-sorriso.svg"
+            src="/2BBFA4EE-F951-4090-B4C7-D6BE50F0C62F.png"
             alt="Momento de bem-estar"
           />
         </div>
