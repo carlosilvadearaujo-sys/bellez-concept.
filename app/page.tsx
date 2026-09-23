@@ -108,7 +108,6 @@ export default function Home() {
       <main id="conteudo">
         <section className="hero shell" aria-labelledby="hero-title">
           <div className="heroCopy">
-            <p className="eyebrow">Cangaíba · São Paulo</p>
             <h1 id="hero-title">Cuidado que começa por você.</h1>
             <p className="lede">Estética, massoterapia, nutrição e bem-estar. Diferentes formas de cuidar de você, reunidas em um só espaço.</p>
             <div className="heroActions">
