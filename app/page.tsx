@@ -1,6 +1,8 @@
 import Image from 'next/image'
 
 const bookingUrl = 'https://www.trinks.com/bellez-estetica'
+const instagramUrl = 'https://www.instagram.com/bellez.estetica/'
+const googleReviewUrl = 'https://search.google.com/local/writereview?placeid=ChIJmUBsuiVhzpQRBtgChxAISXo'
 const photos = {
   welcome: '/bellez-real/1516F68B-F65B-4656-B648-96BC0542BE09.png',
   reception: '/bellez-real/6A8E5C14-1C2A-4711-9553-AAD3D776B8C0.png',
@@ -99,7 +101,7 @@ export default function Home() {
       <header className="nav shell" id="top">
         <a className="brand" href="#top" aria-label="Bellez — início">BELLEZ<span>Estética Integrativa</span></a>
         <nav className="desktopNav" aria-label="Navegação principal">
-          <a href="#tratamentos">Tratamentos</a><a href="#experiencia">A Bellez</a><a href="#catalogo">Serviços</a><a href="#contato">Contato</a>
+          <a href="#tratamentos">Tratamentos</a><a href="#experiencia">A Bellez</a><a href="#catalogo">Serviços</a><a href="#avaliacoes">Avaliações</a><a href={instagramUrl} target="_blank" rel="noreferrer">Instagram</a><a href="#contato">Contato</a>
         </nav>
         <a className="btn primary navCta" href={bookingUrl} target="_blank" rel="noreferrer">Agendar</a>
       </header>
@@ -152,11 +154,32 @@ export default function Home() {
           <div className="catalogAction"><a className="btn primary" href={bookingUrl} target="_blank" rel="noreferrer">Consultar agenda</a></div>
         </section>
 
+
+        <section id="avaliacoes" className="reviewsSection">
+          <div className="shell reviewsGrid">
+            <div>
+              <p className="eyebrow">Avaliações no Google</p>
+              <h2>Quem conhece a Bellez, recomenda.</h2>
+              <p className="reviewsText">A Bellez aparece com nota 5,0 no Google e mais de 670 avaliações públicas.</p>
+            </div>
+            <div className="reviewsCard">
+              <div className="googleRating"><strong>5,0</strong><span>★★★★★</span></div>
+              <p>Veja o que clientes dizem ou deixe sua própria avaliação no Google.</p>
+              <div className="reviewsActions">
+                <a className="btn primary" href={googleReviewUrl} target="_blank" rel="noreferrer">Avaliar no Google</a>
+                <a className="btn soft" href={instagramUrl} target="_blank" rel="noreferrer">Ver Instagram</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="contato" className="contactSection">
           <div className="shell contactGrid"><div><p className="eyebrow">Venha conhecer</p><h2>Seu próximo momento de cuidado.</h2><p>Estamos em Cangaíba, na Zona Leste de São Paulo.</p></div><div className="contactInfo">
             <div><span>Endereço</span><a href="https://www.google.com/maps/search/?api=1&query=Bellez+Est%C3%A9tica+Integrativa+Av.+Canga%C3%ADba+3020+S%C3%A3o+Paulo" target="_blank" rel="noreferrer">Av. Cangaíba, 3020 — Cangaíba / Penha<br/>São Paulo — SP · CEP 03712-005</a></div>
             <div><span>Telefones</span><div className="contactStack"><a href="tel:+5511958342872">(11) 95834-2872</a><a href="tel:+551120556114">(11) 2055-6114</a></div></div>
             <div><span>Agendamento</span><a href={bookingUrl} target="_blank" rel="noreferrer">Consultar horários no Trinks</a></div>
+            <div><span>Instagram</span><a href={instagramUrl} target="_blank" rel="noreferrer">@bellez.estetica</a></div>
+            <div><span>Avaliações</span><a href={googleReviewUrl} target="_blank" rel="noreferrer">Avaliar a Bellez no Google</a></div>
             <div><span>Facilidades</span><p>Wi‑Fi · estacionamento gratuito · atendimento para adultos e crianças</p></div>
             <div><span>Pagamento</span><p>PIX · dinheiro · cartões de crédito e débito · vale-presente</p></div>
             <div><span>Idiomas</span><p>Português · Inglês</p></div>
@@ -164,7 +187,7 @@ export default function Home() {
         </section>
         <section className="finalCta shell"><div><p className="eyebrow">Seu momento Bellez</p><h2>Reserve um tempo para você.</h2></div><a className="btn primary" href={bookingUrl} target="_blank" rel="noreferrer">Agendar na Bellez</a></section>
       </main>
-      <footer className="footer shell"><a className="brand" href="#top">BELLEZ<span>Estética Integrativa</span></a><p>Conceito demonstrativo não oficial.<br/>Informações sujeitas à validação da clínica.</p><a href="#top" className="textLink">Voltar ao início</a></footer>
+      <footer className="footer shell"><a className="brand" href="#top">BELLEZ<span>Estética Integrativa</span></a><p>Conceito demonstrativo não oficial.<br/>Informações sujeitas à validação da clínica.</p><div className="footerLinks"><a href={instagramUrl} target="_blank" rel="noreferrer" className="textLink">Instagram</a><a href={googleReviewUrl} target="_blank" rel="noreferrer" className="textLink">Avaliar no Google</a><a href="#top" className="textLink">Voltar ao início</a></div></footer>
     </>
   )
 }
