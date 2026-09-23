@@ -1,0 +1,31 @@
+name: Convert Bellez images to WebP
+
+on:
+  push:
+    paths:
+      - '.github/workflows/convert-webp.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install WebP tools
+        run: sudo apt-get update && sudo apt-get install -y webp
+      - name: Convert site photos to WebP
+        run: |
+          set -e
+          for f in public/bellez-real/*.png; do
+            cwebp -quiet -q 85 "$f" -o "${f%.png}.webp"
+          done
+          sed -i 's/\.png/\.webp/g' app/page.tsx app/layout.tsx
+      - name: Commit converted images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/bellez-real/*.webp app/page.tsx app/layout.tsx
+          git commit -m "perf: convert Bellez images to WebP"
+          git push
