@@ -121,7 +121,6 @@ export default function Home() {
           </div>
           <figure className="heroVisual">
             <Image src={photos.welcome} alt="Recepção Bellez, com uma mulher junto ao balcão e à marca da clínica" width={1600} height={2000} sizes="(max-width: 900px) 100vw, 50vw" priority className="heroMainImage" />
-            <figcaption>Um espaço para acolher você.</figcaption>
           </figure>
         </section>
 
