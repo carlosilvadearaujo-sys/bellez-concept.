@@ -104,6 +104,20 @@ export default function Home() {
         <nav className="desktopNav" aria-label="Navegação principal">
           <a href="#tratamentos">Tratamentos</a><a href="#experiencia">A Bellez</a><a href="#catalogo">Serviços</a><a href="#avaliacoes">Avaliações</a><a href={instagramUrl} target="_blank" rel="noreferrer">Instagram</a><a href="#contato">Contato</a>
         </nav>
+        <details className="mobileMenu">
+          <summary aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+          </summary>
+          <nav className="mobileMenuPanel" aria-label="Navegação mobile">
+            <a href="#tratamentos">Tratamentos</a>
+            <a href="#experiencia">A Bellez</a>
+            <a href="#catalogo">Serviços</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href={instagramUrl} target="_blank" rel="noreferrer">Instagram</a>
+            <a href="#contato">Contato</a>
+            <a className="btn primary mobileMenuCta" href={bookingUrl} target="_blank" rel="noreferrer">Agendar horário</a>
+          </nav>
+        </details>
         <a className="btn primary navCta" href={bookingUrl} target="_blank" rel="noreferrer">Agendar</a>
       </header>
       <main id="conteudo">
