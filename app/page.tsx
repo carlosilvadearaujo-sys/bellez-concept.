@@ -179,6 +179,7 @@ export default function Home() {
           <div className="shell contactGrid"><div><p className="eyebrow">Venha conhecer</p><h2>Seu próximo momento de cuidado.</h2><p>Estamos em Cangaíba, na Zona Leste de São Paulo.</p></div><div className="contactInfo">
             <div><span>Endereço</span><a href="https://www.google.com/maps/search/?api=1&query=Bellez+Est%C3%A9tica+Integrativa+Av.+Canga%C3%ADba+3020+S%C3%A3o+Paulo" target="_blank" rel="noreferrer">Av. Cangaíba, 3020 — Cangaíba / Penha<br/>São Paulo — SP · CEP 03712-005</a></div>
             <div><span>Telefones</span><div className="contactStack"><a href="tel:+5511958342872">(11) 95834-2872</a><a href="tel:+551120556114">(11) 2055-6114</a></div></div>
+            <div><span>E-mail</span><a href="mailto:contato@bellez.com.br">contato@bellez.com.br</a></div>
             <div><span>Agendamento</span><a href={bookingUrl} target="_blank" rel="noreferrer">Consultar horários no Trinks</a></div>
             <div><span>Instagram</span><a href={instagramUrl} target="_blank" rel="noreferrer">@bellez.estetica</a></div>
             <div><span>Avaliações</span><a href={googleReviewUrl} target="_blank" rel="noreferrer">Avaliar a Bellez no Google</a></div>
