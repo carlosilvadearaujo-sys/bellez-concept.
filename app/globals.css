@@ -245,3 +245,32 @@ body{background:#fff}
   .googleRating strong{font-size:52px}
   .contactInfo>div{grid-template-columns:1fr;gap:8px}
 }
+
+
+/* Restore bottom CTA image that existed before the layout pass */
+.finalCta{
+  position:relative;
+  overflow:hidden;
+  min-height:520px;
+  padding:90px max(28px,calc((100vw - 1240px)/2));
+  background:
+    linear-gradient(90deg,rgba(22,60,48,.90) 0%,rgba(22,60,48,.66) 48%,rgba(22,60,48,.28) 100%),
+    url('/bellez-real/FDA33DEB-3090-4456-9063-DEE0B0626BB4.png') center 42%/cover no-repeat;
+  color:var(--cream);
+  border:0;
+}
+.finalCta .eyebrow{color:#dce5df}
+.finalCta h2{color:var(--cream)}
+.finalCta .btn.primary{
+  background:var(--cream);
+  color:var(--green);
+  border-color:var(--cream);
+}
+.finalCta .btn.primary:hover{background:#fff;color:var(--green)}
+@media(max-width:760px){
+  .finalCta{
+    min-height:500px;
+    padding:64px 16px;
+    background-position:center 40%;
+  }
+}
