@@ -77,13 +77,13 @@ const serviceGroups = [
   },
 ]
 
-const highlights = [
-  ['Botox', 'Estética facial'],
-  ['Limpeza de Pele LED Skin Detox', 'Estética facial'],
-  ['Drenagem Linfática', 'Estética corporal'],
-  ['Massagem Relaxante', 'Massoterapia'],
-  ['Acupuntura', 'Terapias integrativas'],
-  ['Reiki', 'Bem-estar'],
+const galleryImages = [
+  '/bellez-real/336B33DC-E2E1-48DB-87AF-E61D6291E797.png',
+  '/bellez-real/52B1221D-3258-411D-85A6-E643C7795A1B.png',
+  '/bellez-real/6A8E5C14-1C2A-4711-9553-AAD3D776B8C0.png',
+  '/bellez-real/9F17E22D-4AB4-474D-819A-5A3398195A43.png',
+  '/bellez-real/BC01D8AE-B7EF-4CF6-A536-C088438961C8.png',
+  '/bellez-real/BC95B373-77D3-4197-93B1-773F048A0BCC.png',
 ]
 
 export default function Home() {
@@ -124,7 +124,7 @@ export default function Home() {
 
           <div className="heroActions">
             <a className="btn primary" href="#tratamentos">
-              Conhecer tratamentos
+              Ver tratamentos
             </a>
             <a
               className="btn ghost"
@@ -132,7 +132,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              Agendar horário
+              Agendar agora
             </a>
           </div>
 
@@ -196,7 +196,7 @@ export default function Home() {
             formas de cuidado em um mesmo espaço.
           </p>
           <a href="#catalogo">
-            Conheça os serviços <b>→</b>
+            Ver todos os serviços <b>→</b>
           </a>
         </div>
       </section>
@@ -204,31 +204,20 @@ export default function Home() {
       <section id="destaques" className="section shell">
         <div className="sectionHead split">
           <div>
-            <p className="eyebrow">Tratamentos em destaque</p>
-            <h2>Alguns dos cuidados encontrados na Bellez.</h2>
+            <p className="eyebrow">Bellez em imagens</p>
+            <h2>Um espaço pensado para cuidado, beleza e bem-estar.</h2>
           </div>
           <p>
-            O agendamento continua sendo feito pela plataforma Trinks já utilizada
-            pela clínica.
+            As fotos ficam separadas do catálogo para não associar uma imagem ao
+            procedimento errado. Os serviços aparecem organizados logo abaixo.
           </p>
         </div>
 
-        <div className="treatmentGrid">
-          {highlights.map(([name, cat], i) => (
-            <article className="treatment" key={name}>
-              <div className={`treatmentPhoto photo${i + 1}`}></div>
-              <div className="treatmentMeta">
-                <small>{cat}</small>
-                <h3>{name}</h3>
-                <a
-                  href="https://www.trinks.com/bellez-estetica"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ver no agendamento <span>↗</span>
-                </a>
-              </div>
-            </article>
+        <div className="galleryGrid">
+          {galleryImages.map((src, i) => (
+            <figure className={`galleryItem galleryItem${i + 1}`} key={src}>
+              <img src={src} alt="Bellez Estética Integrativa" />
+            </figure>
           ))}
         </div>
       </section>
