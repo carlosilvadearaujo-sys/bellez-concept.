@@ -345,3 +345,61 @@ body{background:#fff}
   .whatsappFloat span{display:none}
   .whatsappFloat svg{width:27px;height:27px}
 }
+
+
+/* Mobile navigation menu */
+.mobileMenu{display:none;position:relative;margin-left:auto}
+.mobileMenu summary{
+  list-style:none;
+  width:44px;
+  height:44px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  cursor:pointer;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#fff;
+}
+.mobileMenu summary::-webkit-details-marker{display:none}
+.mobileMenu summary span{
+  display:block;
+  width:17px;
+  height:1.5px;
+  background:var(--ink);
+  transition:transform .2s ease,opacity .2s ease;
+}
+.mobileMenu[open] summary span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.mobileMenu[open] summary span:nth-child(2){opacity:0}
+.mobileMenu[open] summary span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mobileMenuPanel{
+  position:absolute;
+  top:54px;
+  right:0;
+  width:min(310px,calc(100vw - 32px));
+  padding:18px;
+  display:grid;
+  gap:2px;
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:0 18px 45px rgba(0,0,0,.12);
+  z-index:120;
+}
+.mobileMenuPanel>a:not(.btn){
+  display:flex;
+  align-items:center;
+  min-height:46px;
+  padding:0 10px;
+  font-family:var(--sans);
+  font-size:13px;
+  border-bottom:1px solid #eef0ea;
+}
+.mobileMenuPanel>a:not(.btn):last-of-type{border-bottom:0}
+.mobileMenuCta{width:100%;margin-top:12px}
+@media(max-width:760px){
+  .mobileMenu{display:block}
+  .navCta{display:none}
+  .nav{gap:12px}
+}
