@@ -17,3 +17,21 @@
 .contactStack{display:grid;gap:6px}
 .contactInfo p{margin:0;line-height:1.55;color:var(--ink)}
 @media(max-width:700px){.businessFacts{grid-template-columns:1fr}.businessFacts>div{border-right:0;border-bottom:1px solid var(--line);padding:18px 0}.businessFacts>div:last-child{border-bottom:0}}
+
+
+/* Reviews and social */
+.reviewsSection{padding-block:72px;background:#f3efe5}
+.reviewsGrid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.reviewsGrid h2{font-size:clamp(34px,4vw,50px);line-height:1.15;letter-spacing:-.03em}
+.reviewsText{color:var(--muted);max-width:520px;margin-top:18px;font-size:15px}
+.reviewsCard{background:#fdfbf7;border:1px solid var(--line);border-radius:8px;padding:30px}
+.googleRating{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.googleRating strong{font:500 42px/1 var(--serif)}
+.googleRating span{letter-spacing:.08em;color:#a77831;font-size:15px}
+.reviewsCard>p{color:var(--muted);font-size:14px;max-width:430px}
+.reviewsActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.soft{background:transparent;border-color:var(--line);color:var(--ink)}
+.soft:hover{background:#ece9df}
+.footerLinks{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+@media(max-width:760px){.reviewsGrid{grid-template-columns:1fr;gap:28px}.reviewsSection{padding-block:54px}.reviewsCard{padding:24px}}
+@media(max-width:560px){.reviewsActions{display:grid}.reviewsActions .btn{width:100%}.footerLinks{flex-direction:column;align-items:flex-start;gap:6px}}
