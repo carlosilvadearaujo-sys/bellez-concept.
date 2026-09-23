@@ -108,7 +108,7 @@ export default function Home() {
           <div className="heroCopy">
             <p className="eyebrow">Cangaíba · São Paulo</p>
             <h1 id="hero-title">Cuidado que começa por você.</h1>
-            <p className="lede">Estética, massoterapia e bem-estar. Diferentes formas de cuidar de você, reunidas em um só espaço.</p>
+            <p className="lede">Estética, massoterapia, nutrição e bem-estar. Diferentes formas de cuidar de você, reunidas em um só espaço.</p>
             <div className="heroActions">
               <a className="btn primary" href={bookingUrl} target="_blank" rel="noreferrer">Agendar horário</a>
               <a className="textLink" href="#tratamentos">Conhecer os cuidados</a>
@@ -119,6 +119,13 @@ export default function Home() {
             <Image src={photos.welcome} alt="Recepção Bellez, com uma mulher junto ao balcão e à marca da clínica" fill priority sizes="(max-width: 760px) 100vw, 50vw" />
             <figcaption>Um espaço para acolher você.</figcaption>
           </figure>
+        </section>
+
+
+        <section className="businessFacts shell" aria-label="Informações da Bellez">
+          <div><span>Localização</span><strong>Cangaíba · Zona Leste de São Paulo</strong></div>
+          <div><span>Agendamento</span><strong>Online pelo Trinks</strong></div>
+          <div><span>Contato</span><strong>(11) 95834-2872</strong></div>
         </section>
 
         <section id="tratamentos" className="section shell">
@@ -134,7 +141,7 @@ export default function Home() {
         <section id="experiencia" className="experience">
           <div className="shell experienceGrid">
             <div className="experienceImage"><Image src={photos.reception} alt="Atendimento e conversa no balcão da recepção Bellez" fill sizes="(max-width: 760px) 100vw, 50vw" /></div>
-            <div className="experienceCopy"><p className="eyebrow">A experiência Bellez</p><h2>O cuidado começa no acolhimento.</h2><p>Da recepção ao atendimento, um momento dedicado a você. A Bellez reúne estética facial e corporal, massoterapia e diferentes áreas de bem-estar em Cangaíba.</p><a className="btn outlineLight" href="#contato">Conheça o espaço</a></div>
+            <div className="experienceCopy"><p className="eyebrow">A experiência Bellez</p><h2>O cuidado começa no acolhimento.</h2><p>Da recepção ao atendimento, um momento dedicado a você. A Bellez reúne estética, massoterapia e nutrição, com cuidados voltados à pele, ao corpo, ao relaxamento e ao bem-estar.</p><a className="btn outlineLight" href="#contato">Conheça o espaço</a></div>
           </div>
         </section>
 
@@ -147,9 +154,12 @@ export default function Home() {
 
         <section id="contato" className="contactSection">
           <div className="shell contactGrid"><div><p className="eyebrow">Venha conhecer</p><h2>Seu próximo momento de cuidado.</h2><p>Estamos em Cangaíba, na Zona Leste de São Paulo.</p></div><div className="contactInfo">
-            <div><span>Endereço</span><a href="https://www.google.com/maps/search/?api=1&query=Bellez+Est%C3%A9tica+Integrativa+Av.+Canga%C3%ADba+3020+S%C3%A3o+Paulo" target="_blank" rel="noreferrer">Av. Cangaíba, 3020<br/>São Paulo — SP</a></div>
-            <div><span>Telefone</span><a href="tel:+5511958342872">(11) 95834-2872</a></div>
-            <div><span>Agendamento</span><a href={bookingUrl} target="_blank" rel="noreferrer">Ver horários no Trinks</a></div>
+            <div><span>Endereço</span><a href="https://www.google.com/maps/search/?api=1&query=Bellez+Est%C3%A9tica+Integrativa+Av.+Canga%C3%ADba+3020+S%C3%A3o+Paulo" target="_blank" rel="noreferrer">Av. Cangaíba, 3020 — Cangaíba / Penha<br/>São Paulo — SP · CEP 03712-005</a></div>
+            <div><span>Telefones</span><div className="contactStack"><a href="tel:+5511958342872">(11) 95834-2872</a><a href="tel:+551120556114">(11) 2055-6114</a></div></div>
+            <div><span>Agendamento</span><a href={bookingUrl} target="_blank" rel="noreferrer">Consultar horários no Trinks</a></div>
+            <div><span>Facilidades</span><p>Wi‑Fi · estacionamento gratuito · atendimento para adultos e crianças</p></div>
+            <div><span>Pagamento</span><p>PIX · dinheiro · cartões de crédito e débito · vale-presente</p></div>
+            <div><span>Idiomas</span><p>Português · Inglês</p></div>
           </div></div>
         </section>
         <section className="finalCta shell"><div><p className="eyebrow">Seu momento Bellez</p><h2>Reserve um tempo para você.</h2></div><a className="btn primary" href={bookingUrl} target="_blank" rel="noreferrer">Agendar na Bellez</a></section>
