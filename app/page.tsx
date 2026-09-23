@@ -185,7 +185,6 @@ export default function Home() {
             <div><span>Avaliações</span><a href={googleReviewUrl} target="_blank" rel="noreferrer">Avaliar a Bellez no Google</a></div>
             <div><span>Facilidades</span><p>Wi‑Fi · estacionamento gratuito · atendimento para adultos e crianças</p></div>
             <div><span>Pagamento</span><p>PIX · dinheiro · cartões de crédito e débito</p></div>
-            <div><span>Idiomas</span><p>Português · Inglês</p></div>
           </div></div>
         </section>
         <section className="finalCta shell"><div><p className="eyebrow">Seu momento Bellez</p><h2>Reserve um tempo para você.</h2></div><a className="btn primary" href={bookingUrl} target="_blank" rel="noreferrer">Agendar na Bellez</a></section>
