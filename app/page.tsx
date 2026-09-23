@@ -118,7 +118,7 @@ export default function Home() {
             <p className="heroDetail">Bellez Estética Integrativa <span>Av. Cangaíba, 3020</span></p>
           </div>
           <figure className="heroVisual">
-            <Image src={photos.welcome} alt="Recepção Bellez, com uma mulher junto ao balcão e à marca da clínica" fill priority sizes="(max-width: 760px) 100vw, 50vw" />
+            <img src={photos.welcome} alt="Recepção Bellez, com uma mulher junto ao balcão e à marca da clínica" className="heroMainImage" />
             <figcaption>Um espaço para acolher você.</figcaption>
           </figure>
         </section>
