@@ -105,7 +105,7 @@ export default function Home() {
           <a href="#tratamentos">Tratamentos</a><a href="#experiencia">A Bellez</a><a href="#catalogo">Serviços</a><a href="#avaliacoes">Avaliações</a><a href={instagramUrl} target="_blank" rel="noreferrer">Instagram</a><a href="#contato">Contato</a>
         </nav>
         <details className="mobileMenu">
-          <summary aria-label="Abrir menu">
+          <summary aria-label="Abrir menu de navegação">
             <span></span><span></span><span></span>
           </summary>
           <nav className="mobileMenuPanel" aria-label="Navegação mobile">
